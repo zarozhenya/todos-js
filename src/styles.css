@@ -1,0 +1,135 @@
+/*
+    COMMON
+*/
+
+ul,
+h1,
+p,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*
+    TODOS
+*/
+
+.preferences {
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
+
+.preferences-form {
+  margin-bottom: 10px;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.wrapper .preferences-form__input {
+  flex-grow: 1;
+}
+.preferences-form span {
+  margin-right: 10px;
+}
+
+.preferences-form__btn {
+  margin-left: 20px;
+}
+
+.preferences-form__label {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.preferences-form__input {
+  flex-grow: 1;
+}
+
+.preferences-form__btn {
+  border: none;
+  background-color: #5dd39e;
+  color: #fffcf2;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todos {
+  padding: 0 10px;
+}
+
+.todos-list {
+  list-style: none;
+}
+
+.todos-list__item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: dotted #348aa7;
+  border-radius: 5px;
+}
+
+.todos-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.todos-list__text {
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.todos-list__date {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+.todos-list__btn,
+.modal__btn {
+  border: none;
+  background-color: #d63230;
+  color: #fffcf2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todos-list__btn--success {
+  background-color: #5dd39e;
+  margin-right: 10px;
+}
+
+.modal {
+  position: relative;
+  min-height: 300px;
+  width: 300px;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.modal__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

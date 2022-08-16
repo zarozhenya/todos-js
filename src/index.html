@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>JS Practice Project</title>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <main>
+      <section class="preferences">
+        <form class="preferences-form js-form">
+          <label class="preferences-form__label"
+            ><span>Enter the name</span>
+            <input
+              type="text"
+              name="todoName"
+              class="preferences-form__input"
+            />
+          </label>
+          <div class="wrapper">
+            <label class="preferences-form__label">
+              <span>Enter the deadline</span>
+              <input
+                type="text"
+                name="todoDeadline"
+                class="preferences-form__input"
+              />
+            </label>
+            <button type="submit" class="preferences-form__btn">Add</button>
+          </div>
+        </form>
+        <div class="filters">
+          <label
+            >Sort by
+            <select name="sort-by" class="js-picker">
+              <option value="">--</option>
+              <option value="asc-alphabet">ascending by alphabet</option>
+              <option value="desc-alphabet">descending by alphabet</option>
+              <option value="asc-date">ascending by date</option>
+              <option value="desc-date">descending by date</option>
+              <option value="by-done">done first</option>
+              <option value="by-not-done">not done first</option>
+            </select>
+          </label>
+          <label>
+            Find
+            <input type="text" name="filter" class="filters__input" />
+          </label>
+        </div>
+      </section>
+      <section class="todos">
+        <ul class="todos-list"></ul>
+      </section>
+    </main>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
